@@ -7,155 +7,180 @@
   <meta name="description" content="Adnan Ben Mansour - PhD student at École Normale Supérieure, working on deep learning for visually-rich document understanding." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=ab62622c" />
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="stylesheet" href="styles.css?v=4a01e9f5" />
   <script>
     (function(){try{var t=localStorage.getItem('theme')||'light';document.documentElement.setAttribute('data-theme',t);}catch(e){document.documentElement.setAttribute('data-theme','light');}})();
   </script>
+  <script src="serpentine-bg.js?v=650c353c"></script>
 </head>
 <body>
-  <article class="sheet">
+  <serpentine-bg></serpentine-bg>
 
-    <header class="topbar">
-      <a class="brand" href="index.html">Adnan Ben Mansour</a>
-      <nav class="nav" aria-label="Primary">
-        <a href="index.html" class="is-current">Home</a>
-        <a href="publications.html">Publications</a>
-        <a href="blog.html">Blog</a>
-        <span class="nav-sep" aria-hidden="true"></span>
-        <button class="theme-toggle" type="button" aria-label="Toggle theme" aria-pressed="false"></button>
-      </nav>
-    </header>
+  <div id="wrap">
+    <main class="sheet lg-rim lg-rim-lg">
 
-    
-    <section class="hero">
-      <div class="avatar-wrap">
-        <div class="avatar">
-          <img src="avatar.png" alt="Adnan Ben Mansour"/>
-        </div>
-        <span class="avatar-viewfinder" aria-hidden="true">
-          <span class="vf-corner vf-tl"></span>
-          <span class="vf-corner vf-tr"></span>
-          <span class="vf-corner vf-bl"></span>
-          <span class="vf-corner vf-br"></span>
-          <span class="vf-flash"></span>
-        </span>
-      </div>
-      <div class="hero-text">
-        <h1 class="hero-tagline">About Me<span class="caret" aria-hidden="true"></span></h1>
-        <ul class="hero-meta">
-          <li>
-            <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <header class="topbar">
+        <a class="brand" href="index.html">Adnan Ben Mansour</a>
+        <nav class="nav" aria-label="Primary">
+          <a href="index.html" class="is-current" aria-current="page">Home</a>
+          <a href="publications.html">Publications</a>
+          <a href="blog.html">Blog</a>
+          <button class="theme-toggle" type="button" aria-label="Toggle theme">
+            <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2.5M12 19.5V22M4.2 4.2l1.8 1.8M18 18l1.8 1.8M2 12h2.5M19.5 12H22M4.2 19.8l1.8-1.8M18 6l1.8-1.8"/></svg>
+            <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5Z"/></svg>
+          </button>
+        </nav>
+      </header>
+
+      
+    <section class="home-hero">
+      <div class="hero-id">
+        <div class="avatar"><img src="avatar.png" alt="Adnan Ben Mansour" /></div>
+        <div class="hero-text">
+          <h1 class="hero-name">About Me</h1>
+          <ul class="meta-list">
+            <li>
+              <span class="meta-ico"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
   <path d="M2 9.5 12 5l10 4.5L12 14 2 9.5Z"/>
   <path d="M6 11.4v4.1c0 1.4 2.7 2.5 6 2.5s6-1.1 6-2.5v-4.1"/>
   <path d="M21 9.8V15"/>
 </svg>
-
-            <span>PhD candidate</span>
-          </li>
-          <li>
-            <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+</span>
+              <span>PhD candidate <span class="meta-note">(until Dec 2026)</span></span>
+            </li>
+            <li>
+              <span class="meta-ico"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
   <path d="M12 21.5s7-6.8 7-12.5a7 7 0 1 0-14 0c0 5.7 7 12.5 7 12.5Z"/>
   <circle cx="12" cy="9.5" r="2.5"/>
 </svg>
-
-            <span>Paris, France</span>
-          </li>
-        </ul>
-        <ul class="hero-affil">
-          <li><a href="https://www.ens.psl.eu/" target="_blank" rel="noopener"><span>École Normale Supérieure</span></a></li>
-          <li><a href="http://lipade.math-info.univ-paris5.fr/" target="_blank" rel="noopener"><span>Université Paris Cité</span></a></li>
-          <li><a href="https://www.kipmi.com/" target="_blank" rel="noopener"><span>be-ys Research</span></a></li>
-        </ul>
+</span>
+              <span>Paris, France</span>
+            </li>
+          </ul>
+          <div class="affil affil--row">
+            <a href="https://www.ens.psl.eu/" target="_blank" rel="noopener">École Normale Supérieure</a>
+            <a href="http://lipade.math-info.univ-paris5.fr/" target="_blank" rel="noopener">Université Paris Cité</a>
+            <a href="https://www.kipmi.com/" target="_blank" rel="noopener">be-ys Research</a>
+          </div>
+        </div>
       </div>
-    </section>
 
-    <p class="lede is-strong">
-      I teach models to read and understand pages with attention to layout, tables and figures alongside the text.
+      <p class="lede">My interests in AI are pretty broad, but they mostly come back to perception and
+representation: computer vision, representation learning, and JEPA-style world
+models. Reinforcement learning and vision-language models are never far behind.
+My PhD focuses on one small part of all this: teaching models to read documents,
+where the layout, tables and figures matter as much as the text itself.
 
-    </p>
+Away from research, I just like to build things. I'm comfortable in several
+languages (Python and C++ among them) and enjoy computing at every level, right
+down to low-level and embedded work. And I'm just as comfortable on the theory
+side, happy to take a problem all the way down to its mathematical foundations.
+</p>
 
-    <div class="links-row" aria-label="Contact and profiles">
-      <a href="mailto:adnan.ben-mansour@ens.fr" aria-label="Email" title="Email">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
-
-      </a>
-      <a href="https://scholar.google.com/citations?user=5dM98OUAAAAJ&hl=fr&oi=ao" rel="me" aria-label="Google Scholar" title="Google Scholar">
-        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3 1 9.5 12 16l9-5.32V17h2V9.5L12 3z"/><path d="M5.5 13.2v3.3c0 1.7 2.9 3.5 6.5 3.5s6.5-1.8 6.5-3.5v-3.3L12 17l-6.5-3.8z"/></svg>
-
-      </a>
-      <a href="https://github.com/Adnan-Ben-Mansour" rel="me" aria-label="GitHub" title="GitHub">
-        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.89 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.94.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2z"/></svg>
-
-      </a>
-      <a href="https://www.linkedin.com/in/adnan-ben-mansour-ba91ab295/" rel="me" aria-label="LinkedIn" title="LinkedIn">
-        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.5h4V21H3V9.5zM9.5 9.5h3.84v1.57h.05c.53-1 1.84-2.07 3.79-2.07 4.05 0 4.8 2.66 4.8 6.13V21h-4v-5.25c0-1.25-.02-2.86-1.74-2.86-1.74 0-2 1.36-2 2.77V21h-4V9.5z"/></svg>
-
-      </a>
-      <a href="https://orcid.org/0009-0002-1891-4903" rel="me" aria-label="ORCID" title="ORCID">
-        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zM8.4 7.6a1.05 1.05 0 1 1 0 2.1 1.05 1.05 0 0 1 0-2.1zm-.8 3.4h1.6V17H7.6v-6zm3.2 0h3.2c2.18 0 3.6 1.45 3.6 3.5S16.18 17 14 17h-3.2v-6zm1.6 1.4v3.2h1.5c1.32 0 2.1-.79 2.1-1.6s-.78-1.6-2.1-1.6h-1.5z"/></svg>
-
-      </a>
-      <a class="resume-btn" href="cv.pdf" target="_blank">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <div class="contact-row" aria-label="Contact and profiles">
+        <div class="iconbtns">
+          <a class="iconbtn" href="mailto:adnan.ben-mansour@ens.fr" aria-label="Email" title="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+</a>
+          <a class="iconbtn" href="https://scholar.google.com/citations?user=5dM98OUAAAAJ&hl=fr&oi=ao" rel="me" target="_blank" aria-label="Google Scholar" title="Google Scholar"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3 1 9.5 12 16l9-5.32V17h2V9.5L12 3z"/><path d="M5.5 13.2v3.3c0 1.7 2.9 3.5 6.5 3.5s6.5-1.8 6.5-3.5v-3.3L12 17l-6.5-3.8z"/></svg>
+</a>
+          <a class="iconbtn" href="https://github.com/Adnan-Ben-Mansour" rel="me" target="_blank" aria-label="GitHub" title="GitHub"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.89 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.94.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2z"/></svg>
+</a>
+          <a class="iconbtn" href="https://www.linkedin.com/in/adnan-ben-mansour-ba91ab295/" rel="me" target="_blank" aria-label="LinkedIn" title="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.5h4V21H3V9.5zM9.5 9.5h3.84v1.57h.05c.53-1 1.84-2.07 3.79-2.07 4.05 0 4.8 2.66 4.8 6.13V21h-4v-5.25c0-1.25-.02-2.86-1.74-2.86-1.74 0-2 1.36-2 2.77V21h-4V9.5z"/></svg>
+</a>
+          <a class="iconbtn" href="https://orcid.org/0009-0002-1891-4903" rel="me" target="_blank" aria-label="ORCID" title="ORCID"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zM8.4 7.6a1.05 1.05 0 1 1 0 2.1 1.05 1.05 0 0 1 0-2.1zm-.8 3.4h1.6V17H7.6v-6zm3.2 0h3.2c2.18 0 3.6 1.45 3.6 3.5S16.18 17 14 17h-3.2v-6zm1.6 1.4v3.2h1.5c1.32 0 2.1-.79 2.1-1.6s-.78-1.6-2.1-1.6h-1.5z"/></svg>
+</a>
+        </div>
+        <a class="resume-btn" href="cv.pdf" target="_blank">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
   <path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/>
   <path d="M14 3v5h5"/>
   <path d="M9 13h6"/>
   <path d="M9 17h4"/>
 </svg>
-
-        <span>Résumé</span>
-      </a>
-    </div>
-
-    <section class="block">
-      <h2>Selected publications</h2>
-        <ol class="pubs">
-        <li class="pub" data-sig="distill">
-          <div class="pub-content">
-            <h3 class="title"><a href="https://arxiv.org/abs/2509.26235" target="_blank" rel="noopener">Interpret, Prune and Distill Donut: Towards Lightweight VLMs for VQA on Documents</a></h3>
-            <div class="pub-meta">
-              <p class="authors"><span class="me">A. Ben Mansour</span>, A. Karine, D. Naccache</p>
-              <p class="venue-tag">ICDAR 2025 <span class="venue-flag">WORKSHOP</span></p>
-            </div>
-            <p class="abstract">Uses mechanistic interpretability to guide pruning and distillation of the Donut VLM, yielding Donut-MINT, a lighter variant that keeps DocVQA performance at a fraction of the compute and memory.</p>
-            <div class="links">
-              <a class="paper-btn" href="https://arxiv.org/abs/2509.26235" target="_blank" rel="noopener">Paper <span class="arrow">&rarr;</span></a>
-            </div>
-          </div>
-        </li>
-        <li class="pub" data-sig="multimodal">
-          <div class="pub-content">
-            <h3 class="title"><a href="https://hal.science/hal-05142188v1" target="_blank" rel="noopener">Visualisation des interactions multimodales dans les modèles vision-langages</a></h3>
-            <div class="pub-meta">
-              <p class="authors"><span class="me">A. Ben Mansour</span>, A. Karine</p>
-              <p class="venue-tag">ORASIS 2025 <span class="venue-flag">ORAL</span></p>
-            </div>
-            <p class="abstract">Presents visualisation methods that expose how multiple modalies interact in vision-language models, making modality collapse easier to read and diagnose.</p>
-            <div class="links">
-              <a class="paper-btn" href="https://hal.science/hal-05142188v1" target="_blank" rel="noopener">Paper <span class="arrow">&rarr;</span></a>
-            </div>
-          </div>
-        </li>
-            </ol>
-
-      <a class="see-all" href="publications.html">All publications &rarr;</a>
+<span>Résumé</span>
+        </a>
+      </div>
     </section>
 
-    <section class="block">
-      <h2>Recent posts</h2>
-      <ul class="posts">
-      </ul>
+    <section class="card lg-rim card--clip card--sep is-open" data-collapse>
+      <div class="card__bar">
+        <button class="card__head" type="button" aria-expanded="true">
+          <span class="dot dot--pub"></span>
+          <span>Selected publications</span>
+          <span class="card__chev"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></span>
+        </button>
+        <a class="card__action" href="publications.html"><span>All publications</span><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></a>
+      </div>
+      <div class="card__body">
+        <div class="yeargrid">
+          <div class="pubrow">
+            <div class="pubrow__top">
+              <div class="pub-thumb" data-sig="distill" aria-hidden="true"></div>
+              <div class="pub-main">
+                <a class="pub-title" href="https://arxiv.org/abs/2509.26235" target="_blank" rel="noopener">Interpret, Prune and Distill Donut: Towards Lightweight VLMs for VQA on Documents</a>
+                <p class="pub-authors"><span class="me">A. Ben Mansour</span>, A. Karine, D. Naccache</p>
+                <p class="pub-venue">ICDAR 2025 <span class="pub-flag">Workshop</span></p>
+              </div>
+              <div class="pub-actions">
+                <a class="pub-btn" href="https://arxiv.org/abs/2509.26235" target="_blank" rel="noopener">Paper <span class="arrow">&rarr;</span></a>
+              </div>
+            </div>
+            <p class="pub-desc">Uses mechanistic interpretability to guide pruning and distillation of the Donut VLM, yielding Donut-MINT, a lighter variant that keeps DocVQA performance at a fraction of the compute and memory.</p>
+          </div>
+          <div class="pubrow">
+            <div class="pubrow__top">
+              <div class="pub-thumb" data-sig="multimodal" aria-hidden="true"></div>
+              <div class="pub-main">
+                <a class="pub-title" href="https://hal.science/hal-05142188v1" target="_blank" rel="noopener">Visualisation des interactions multimodales dans les modèles vision-langages</a>
+                <p class="pub-authors"><span class="me">A. Ben Mansour</span>, A. Karine</p>
+                <p class="pub-venue">ORASIS 2025 <span class="pub-flag">Oral</span></p>
+              </div>
+              <div class="pub-actions">
+                <a class="pub-btn" href="https://hal.science/hal-05142188v1" target="_blank" rel="noopener">Paper <span class="arrow">&rarr;</span></a>
+              </div>
+            </div>
+            <p class="pub-desc">Presents visualisation methods that expose how multiple modalies interact in vision-language models, making modality collapse easier to read and diagnose.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="card lg-rim card--clip is-open" data-collapse>
+      <div class="card__bar">
+        <button class="card__head" type="button" aria-expanded="true">
+          <span class="dot dot--post"></span>
+          <span>Recent posts</span>
+          <span class="card__chev"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></span>
+        </button>
+        <a class="card__action" href="blog.html"><span>All posts</span><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></a>
+      </div>
+      <div class="card__body">
+        <ul class="posts">
+          <li>
+            <span class="date">2026-07-01</span>
+            <a class="post-title" href="posts/2026-07-01-bluedot-technical-ai-safety-puzzle.html">Technical AI Safety Puzzle #1</a>
+            <span class="post-tags"><a class="post-tag" data-tag="ai safety" href="blog.html#tag=ai safety">ai safety</a><a class="post-tag" data-tag="mechanistic interpretability" href="blog.html#tag=mechanistic interpretability">mechanistic interpretability</a><a class="post-tag" data-tag="machine learning" href="blog.html#tag=machine learning">machine learning</a></span>
+          </li>
+          <li>
+            <span class="date">2026-06-30</span>
+            <a class="post-title" href="posts/2026-06-30-hacktheworlds-jepa-world-models.html">Winning HacktheWorld(s): JEPA & World Models</a>
+            <span class="post-tags"><a class="post-tag" data-tag="hackathon" href="blog.html#tag=hackathon">hackathon</a><a class="post-tag" data-tag="world models" href="blog.html#tag=world models">world models</a><a class="post-tag" data-tag="jepa" href="blog.html#tag=jepa">jepa</a><a class="post-tag" data-tag="machine learning" href="blog.html#tag=machine learning">machine learning</a></span>
+          </li>
+        </ul>
+      </div>
     </section>
 
 
-    <footer class="foot">
-      <span>&copy; 2026 Adnan Ben Mansour</span>
-    </footer>
+      <footer class="foot">
+        <span>&copy; 2026 Adnan Ben Mansour</span>
+      </footer>
 
-  </article>
-  <script src="nav.js?v=34305df8"></script>
-  <script src="pub-sigs.js?v=cff84303"></script>
-  <script src="collapse.js?v=99a173e9"></script>
+    </main>
+  </div>
+  <script src="nav.js?v=87e33d95"></script>
+  <script src="collapse.js?v=8786c41b"></script>
+  <script src="pub-sigs.js?v=1fb8c3a6"></script>
 </body>
 </html>

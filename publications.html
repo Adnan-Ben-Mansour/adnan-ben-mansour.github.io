@@ -6,120 +6,157 @@
   <title>Publications - Adnan Ben Mansour</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=ab62622c" />
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="stylesheet" href="styles.css?v=4a01e9f5" />
   <script>
     (function(){try{var t=localStorage.getItem('theme')||'light';document.documentElement.setAttribute('data-theme',t);}catch(e){document.documentElement.setAttribute('data-theme','light');}})();
   </script>
+  <script src="serpentine-bg.js?v=650c353c"></script>
 </head>
 <body>
-  <article class="sheet">
+  <serpentine-bg></serpentine-bg>
 
-    <header class="topbar">
-      <a class="brand" href="index.html">Adnan Ben Mansour</a>
-      <nav class="nav" aria-label="Primary">
-        <a href="index.html">Home</a>
-        <a href="publications.html" class="is-current">Publications</a>
-        <a href="blog.html">Blog</a>
-        <span class="nav-sep" aria-hidden="true"></span>
-        <button class="theme-toggle" type="button" aria-label="Toggle theme" aria-pressed="false"></button>
-      </nav>
-    </header>
+  <div id="wrap">
+    <main class="sheet lg-rim lg-rim-lg">
 
-    
-    <h1>Publications</h1>
-    <p class="lede">
-      Reach out by <a href="mailto:adnan.ben-mansour@ens.fr">email</a> for drafts or discussion.
-    </p>
-    <section class="year-block">
-      <h2>2025</h2>
-      <ol class="pubs">
-        <li class="pub" data-sig="distill">
-          <div class="pub-content">
-            <h3 class="title"><a href="https://arxiv.org/abs/2509.26235" target="_blank" rel="noopener">Interpret, Prune and Distill Donut: Towards Lightweight VLMs for VQA on Documents</a></h3>
-            <div class="pub-meta">
-              <p class="authors"><span class="me">A. Ben Mansour</span>, A. Karine, D. Naccache</p>
-              <p class="venue-tag">ICDAR 2025 <span class="venue-flag">WORKSHOP</span></p>
-            </div>
-            <p class="abstract">Uses mechanistic interpretability to guide pruning and distillation of the Donut VLM, yielding Donut-MINT, a lighter variant that keeps DocVQA performance at a fraction of the compute and memory.</p>
-            <div class="links">
-              <a class="paper-btn" href="https://arxiv.org/abs/2509.26235" target="_blank" rel="noopener">Paper <span class="arrow">&rarr;</span></a>
-            </div>
-          </div>
-        </li>
-        <li class="pub" data-sig="multimodal">
-          <div class="pub-content">
-            <h3 class="title"><a href="https://hal.science/hal-05142188v1" target="_blank" rel="noopener">Visualisation des interactions multimodales dans les modèles vision-langages</a></h3>
-            <div class="pub-meta">
-              <p class="authors"><span class="me">A. Ben Mansour</span>, A. Karine</p>
-              <p class="venue-tag">ORASIS 2025 <span class="venue-flag">ORAL</span></p>
-            </div>
-            <p class="abstract">Presents visualisation methods that expose how multiple modalies interact in vision-language models, making modality collapse easier to read and diagnose.</p>
-            <div class="links">
-              <a class="paper-btn" href="https://hal.science/hal-05142188v1" target="_blank" rel="noopener">Paper <span class="arrow">&rarr;</span></a>
-            </div>
-          </div>
-        </li>
-      </ol>
+      <header class="topbar">
+        <a class="brand" href="index.html">Adnan Ben Mansour</a>
+        <nav class="nav" aria-label="Primary">
+          <a href="index.html">Home</a>
+          <a href="publications.html" class="is-current" aria-current="page">Publications</a>
+          <a href="blog.html">Blog</a>
+          <button class="theme-toggle" type="button" aria-label="Toggle theme">
+            <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2.5M12 19.5V22M4.2 4.2l1.8 1.8M18 18l1.8 1.8M2 12h2.5M19.5 12H22M4.2 19.8l1.8-1.8M18 6l1.8-1.8"/></svg>
+            <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5Z"/></svg>
+          </button>
+        </nav>
+      </header>
+
+      
+    <section class="card lg-rim intro">
+      <h1>Publications</h1>
+      <p>Reach out by <a href="mailto:adnan.ben-mansour@ens.fr">email</a> for drafts or discussion.</p>
     </section>
-    <section class="year-block">
-      <h2>2023</h2>
-      <ol class="pubs">
-        <li class="pub" data-sig="heterogeneity">
-          <div class="pub-content">
-            <h3 class="title"><a href="https://arxiv.org/abs/2307.06283" target="_blank" rel="noopener">Tackling Computational Heterogeneity in Federated Learning: A Few Theoretical Insights</a></h3>
-            <div class="pub-meta">
-              <p class="authors"><span class="me">A. Ben Mansour</span>, G. Carenini, A. Duplessis</p>
-              <p class="venue-tag">ARXIV 2023 <span class="venue-flag">PREPRINT</span></p>
+    <section class="card lg-rim card--clip pubyear is-open" data-collapse>
+      <button class="card__head" type="button" aria-expanded="true">
+        <span class="year-label"><span class="dot dot--pub"></span>2025</span>
+        <span class="year-meta">
+          <span class="year-count">2</span>
+          <span class="card__chev"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></span>
+        </span>
+      </button>
+      <div class="card__body">
+        <div class="yeargrid">
+          <div class="pubrow">
+            <div class="pubrow__top">
+              <div class="pub-thumb" data-sig="distill" aria-hidden="true"></div>
+              <div class="pub-main">
+                <a class="pub-title" href="https://arxiv.org/abs/2509.26235" target="_blank" rel="noopener">Interpret, Prune and Distill Donut: Towards Lightweight VLMs for VQA on Documents</a>
+                <p class="pub-authors"><span class="me">A. Ben Mansour</span>, A. Karine, D. Naccache</p>
+                <p class="pub-venue">ICDAR 2025 <span class="pub-flag">Workshop</span></p>
+              </div>
+              <div class="pub-actions">
+                <a class="pub-btn" href="https://arxiv.org/abs/2509.26235" target="_blank" rel="noopener">Paper <span class="arrow">&rarr;</span></a>
+              </div>
             </div>
-            <p class="abstract">Introduces an aggregation framework for federated learning that formalises and handles computational heterogeneity across clients with different data and local update budgets.</p>
-            <div class="links">
-              <a class="paper-btn" href="https://arxiv.org/abs/2307.06283" target="_blank" rel="noopener">Paper <span class="arrow">&rarr;</span></a>
-            </div>
+            <p class="pub-desc">Uses mechanistic interpretability to guide pruning and distillation of the Donut VLM, yielding Donut-MINT, a lighter variant that keeps DocVQA performance at a fraction of the compute and memory.</p>
           </div>
-        </li>
-      </ol>
+          <div class="pubrow">
+            <div class="pubrow__top">
+              <div class="pub-thumb" data-sig="multimodal" aria-hidden="true"></div>
+              <div class="pub-main">
+                <a class="pub-title" href="https://hal.science/hal-05142188v1" target="_blank" rel="noopener">Visualisation des interactions multimodales dans les modèles vision-langages</a>
+                <p class="pub-authors"><span class="me">A. Ben Mansour</span>, A. Karine</p>
+                <p class="pub-venue">ORASIS 2025 <span class="pub-flag">Oral</span></p>
+              </div>
+              <div class="pub-actions">
+                <a class="pub-btn" href="https://hal.science/hal-05142188v1" target="_blank" rel="noopener">Paper <span class="arrow">&rarr;</span></a>
+              </div>
+            </div>
+            <p class="pub-desc">Presents visualisation methods that expose how multiple modalies interact in vision-language models, making modality collapse easier to read and diagnose.</p>
+          </div>
+        </div>
+      </div>
     </section>
-    <section class="year-block">
-      <h2>2022</h2>
-      <ol class="pubs">
-        <li class="pub" data-sig="fl-aggregation">
-          <div class="pub-content">
-            <h3 class="title"><a href="https://arxiv.org/abs/2205.10864" target="_blank" rel="noopener">Federated learning aggregation: New robust algorithms with guarantees</a></h3>
-            <div class="pub-meta">
-              <p class="authors"><span class="me">A. Ben Mansour</span>, G. Carenini, A. Duplessis, D. Naccache</p>
-              <p class="venue-tag">ICMLA 2022 <span class="venue-flag">POSTER</span></p>
+    <section class="card lg-rim card--clip pubyear is-open" data-collapse>
+      <button class="card__head" type="button" aria-expanded="true">
+        <span class="year-label"><span class="dot dot--pub"></span>2023</span>
+        <span class="year-meta">
+          <span class="year-count">1</span>
+          <span class="card__chev"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></span>
+        </span>
+      </button>
+      <div class="card__body">
+        <div class="yeargrid">
+          <div class="pubrow">
+            <div class="pubrow__top">
+              <div class="pub-thumb" data-sig="heterogeneity" aria-hidden="true"></div>
+              <div class="pub-main">
+                <a class="pub-title" href="https://arxiv.org/abs/2307.06283" target="_blank" rel="noopener">Tackling Computational Heterogeneity in Federated Learning: A Few Theoretical Insights</a>
+                <p class="pub-authors"><span class="me">A. Ben Mansour</span>, G. Carenini, A. Duplessis</p>
+                <p class="pub-venue">ARXIV 2023 <span class="pub-flag">Preprint</span></p>
+              </div>
+              <div class="pub-actions">
+                <a class="pub-btn" href="https://arxiv.org/abs/2307.06283" target="_blank" rel="noopener">Paper <span class="arrow">&rarr;</span></a>
+              </div>
             </div>
-            <p class="abstract">Proposes robust federated learning aggregation rules that weight clients by the value of their losses, with full convergence proofs validated on IID and non-IID benchmarks.</p>
-            <div class="links">
-              <a class="paper-btn" href="https://arxiv.org/abs/2205.10864" target="_blank" rel="noopener">Paper <span class="arrow">&rarr;</span></a>
-            </div>
+            <p class="pub-desc">Introduces an aggregation framework for federated learning that formalises and handles computational heterogeneity across clients with different data and local update budgets.</p>
           </div>
-        </li>
-        <li class="pub" data-sig="fedcontrol">
-          <div class="pub-content">
-            <h3 class="title"><a href="https://arxiv.org/abs/2205.14236" target="_blank" rel="noopener">FedControl: When Control Theory Meets Federated Learning</a></h3>
-            <div class="pub-meta">
-              <p class="authors"><span class="me">A. Ben Mansour</span>, G. Carenini, A. Duplessis, D. Naccache</p>
-              <p class="venue-tag">ICML 2022 <span class="venue-flag">WORKSHOP</span></p>
+        </div>
+      </div>
+    </section>
+    <section class="card lg-rim card--clip pubyear is-open" data-collapse>
+      <button class="card__head" type="button" aria-expanded="true">
+        <span class="year-label"><span class="dot dot--pub"></span>2022</span>
+        <span class="year-meta">
+          <span class="year-count">2</span>
+          <span class="card__chev"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></span>
+        </span>
+      </button>
+      <div class="card__body">
+        <div class="yeargrid">
+          <div class="pubrow">
+            <div class="pubrow__top">
+              <div class="pub-thumb" data-sig="fl-aggregation" aria-hidden="true"></div>
+              <div class="pub-main">
+                <a class="pub-title" href="https://arxiv.org/abs/2205.10864" target="_blank" rel="noopener">Federated learning aggregation: New robust algorithms with guarantees</a>
+                <p class="pub-authors"><span class="me">A. Ben Mansour</span>, G. Carenini, A. Duplessis, D. Naccache</p>
+                <p class="pub-venue">ICMLA 2022 <span class="pub-flag">Poster</span></p>
+              </div>
+              <div class="pub-actions">
+                <a class="pub-btn" href="https://arxiv.org/abs/2205.10864" target="_blank" rel="noopener">Paper <span class="arrow">&rarr;</span></a>
+              </div>
             </div>
-            <p class="abstract">Reframes federated aggregation through control theory. Inspired by PID controllers, we adapt the server step from each client's local performance trajectory rather than averaging coordinates blindly.</p>
-            <div class="links">
-              <a class="paper-btn" href="https://arxiv.org/abs/2205.14236" target="_blank" rel="noopener">Paper <span class="arrow">&rarr;</span></a>
-            </div>
+            <p class="pub-desc">Proposes robust federated learning aggregation rules that weight clients by the value of their losses, with full convergence proofs validated on IID and non-IID benchmarks.</p>
           </div>
-        </li>
-      </ol>
+          <div class="pubrow">
+            <div class="pubrow__top">
+              <div class="pub-thumb" data-sig="fedcontrol" aria-hidden="true"></div>
+              <div class="pub-main">
+                <a class="pub-title" href="https://arxiv.org/abs/2205.14236" target="_blank" rel="noopener">FedControl: When Control Theory Meets Federated Learning</a>
+                <p class="pub-authors"><span class="me">A. Ben Mansour</span>, G. Carenini, A. Duplessis, D. Naccache</p>
+                <p class="pub-venue">ICML 2022 <span class="pub-flag">Workshop</span></p>
+              </div>
+              <div class="pub-actions">
+                <a class="pub-btn" href="https://arxiv.org/abs/2205.14236" target="_blank" rel="noopener">Paper <span class="arrow">&rarr;</span></a>
+              </div>
+            </div>
+            <p class="pub-desc">Reframes federated aggregation through control theory. Inspired by PID controllers, we adapt the server step from each client's local performance trajectory rather than averaging coordinates blindly.</p>
+          </div>
+        </div>
+      </div>
     </section>
 
 
-    <footer class="foot">
-      <span>&copy; 2026 Adnan Ben Mansour</span>
-    </footer>
+      <footer class="foot">
+        <span>&copy; 2026 Adnan Ben Mansour</span>
+      </footer>
 
-  </article>
-  <script src="nav.js?v=34305df8"></script>
-  <script src="pub-sigs.js?v=cff84303"></script>
-  <script src="collapse.js?v=99a173e9"></script>
+    </main>
+  </div>
+  <script src="nav.js?v=87e33d95"></script>
+  <script src="collapse.js?v=8786c41b"></script>
+  <script src="pub-sigs.js?v=1fb8c3a6"></script>
 </body>
 </html>

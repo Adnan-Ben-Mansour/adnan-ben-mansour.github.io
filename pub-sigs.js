@@ -1,6 +1,6 @@
 // Visual signatures for publication cards. Each is a small motif that
-// illustrates the paper's topic. Used as a faint stamp in the bottom-right
-// of each .pub. Wire up by setting data-sig="<key>" on a <li class="pub">.
+// illustrates the paper's topic, drawn into the .pub-thumb tile of a
+// publication row. Wire up by setting data-sig="<key>" on the .pub-thumb.
 // Falls back to "default" for unknown keys.
 (function(){
   var SIGS = {
@@ -161,17 +161,11 @@
   };
 
   function inject(){
-    var pubs = document.querySelectorAll('.pub[data-sig]');
-    pubs.forEach(function(p){
-      var key = p.getAttribute('data-sig');
-      var svg = SIGS[key] || SIGS['default'];
-      var existing = p.querySelector(':scope > .pub-sig');
-      if (existing && existing.children.length > 0) return;
-      var sig = existing || document.createElement('div');
-      sig.className = 'pub-sig';
-      sig.setAttribute('aria-hidden', 'true');
-      sig.innerHTML = svg;
-      if (!existing) p.insertBefore(sig, p.firstChild);
+    var thumbs = document.querySelectorAll('.pub-thumb[data-sig]');
+    thumbs.forEach(function(el){
+      if (el.children.length > 0) return;
+      var key = el.getAttribute('data-sig');
+      el.innerHTML = SIGS[key] || SIGS['default'];
     });
   }
 

@@ -7,58 +7,66 @@
   <meta name="description" content="Introduces an aggregation framework for federated learning that formalises and handles computational heterogeneity across clients with different data and local update budgets." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="../styles.css?v=ab62622c" />
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="../favicon.png" />
+  <link rel="stylesheet" href="../styles.css?v=4a01e9f5" />
   <script>
     (function(){try{var t=localStorage.getItem('theme')||'light';document.documentElement.setAttribute('data-theme',t);}catch(e){document.documentElement.setAttribute('data-theme','light');}})();
   </script>
+  <script src="../serpentine-bg.js?v=650c353c"></script>
 </head>
 <body>
-  <article class="sheet">
+  <serpentine-bg></serpentine-bg>
 
-    <header class="topbar">
-      <a class="brand" href="../index.html">Adnan Ben Mansour</a>
-      <nav class="nav" aria-label="Primary">
-        <a href="../index.html">Home</a>
-        <a href="../publications.html" class="is-current">Publications</a>
-        <a href="../blog.html">Blog</a>
-        <span class="nav-sep" aria-hidden="true"></span>
-        <button class="theme-toggle" type="button" aria-label="Toggle theme" aria-pressed="false"></button>
-      </nav>
-    </header>
+  <div id="wrap">
+    <main class="sheet lg-rim lg-rim-lg">
 
-    
+      <header class="topbar">
+        <a class="brand" href="../index.html">Adnan Ben Mansour</a>
+        <nav class="nav" aria-label="Primary">
+          <a href="../index.html">Home</a>
+          <a href="../publications.html" class="is-current" aria-current="page">Publications</a>
+          <a href="../blog.html">Blog</a>
+          <button class="theme-toggle" type="button" aria-label="Toggle theme">
+            <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2.5M12 19.5V22M4.2 4.2l1.8 1.8M18 18l1.8 1.8M2 12h2.5M19.5 12H22M4.2 19.8l1.8-1.8M18 6l1.8-1.8"/></svg>
+            <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5Z"/></svg>
+          </button>
+        </nav>
+      </header>
+
+      
     <a class="back-link" href="../publications.html">All publications</a>
 
-    <header class="paper-header">
-      <p class="paper-venue">ARXIV 2023 · PREPRINT</p>
-      <h1>Tackling Computational Heterogeneity in Federated Learning: A Few Theoretical Insights - Adnan Ben Mansour</h1>
-      <p class="paper-authors"><span class="me">A. Ben Mansour</span>, G. Carenini, A. Duplessis</p>
-      <div class="paper-actions">
-        <a class="paper-btn" href="https://arxiv.org/abs/2307.06283" target="_blank" rel="noopener">Paper <span class="arrow">&rarr;</span></a>
+    <article class="card lg-rim article-card">
+      <header class="paper-header">
+        <p class="paper-venue">ARXIV 2023 · PREPRINT</p>
+        <h1>Tackling Computational Heterogeneity in Federated Learning: A Few Theoretical Insights</h1>
+        <p class="paper-authors"><span class="me">A. Ben Mansour</span>, G. Carenini, A. Duplessis</p>
+        <div class="paper-actions">
+          <a class="paper-btn" href="https://arxiv.org/abs/2307.06283" target="_blank" rel="noopener">Paper <span class="arrow">&rarr;</span></a>
+        </div>
+      </header>
+      <section class="paper-abstract">
+        <p class="abstract-label">Abstract</p>
+        <p>Theoretical analysis of federated optimisation when clients perform unequal amounts of local computation, with convergence bounds that explicitly capture this heterogeneity.
+</p>
+      </section>
+
+      <div class="article-body">
+
       </div>
-    </header>
-    <section class="paper-abstract">
-      <p class="abstract-label">Abstract</p>
-      <p>
-        Theoretical analysis of federated optimisation when clients perform unequal amounts of local computation, with convergence bounds that explicitly capture this heterogeneity.
-
-      </p>
-    </section>
-
-    <div class="article-body">
-
-    </div>
+    </article>
 
 
-    <footer class="foot">
-      <span>&copy; 2023 Adnan Ben Mansour</span>
-      <span><a href="../publications.html">All publications &rarr;</a></span>
+      <footer class="foot">
+        <span>&copy; 2023 Adnan Ben Mansour</span>
+      <span> &middot; <a href="../publications.html">All publications &rarr;</a></span>
 
-    </footer>
+      </footer>
 
-  </article>
-  <script src="../nav.js?v=34305df8"></script>
-  <script src="../collapse.js?v=99a173e9"></script>
+    </main>
+  </div>
+  <script src="../nav.js?v=87e33d95"></script>
+  <script src="../collapse.js?v=8786c41b"></script>
 </body>
 </html>
