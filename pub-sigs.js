@@ -146,6 +146,36 @@
       +   '</g>'
       + '</svg>',
 
+    // Dense per-step rewards for RL reading order in STR: image patches visited
+    // in a learned (serpentine) reading order, one reward per placement step.
+    'reading-order': ''
+      + '<svg viewBox="0 0 60 60" width="100%" height="100%" fill="none">'
+      // image patches (2 rows x 3)
+      +   '<g stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" fill="none" opacity="0.5">'
+      +     '<rect x="8" y="11" width="12" height="12" rx="2.5"/>'
+      +     '<rect x="24" y="11" width="12" height="12" rx="2.5"/>'
+      +     '<rect x="40" y="11" width="12" height="12" rx="2.5"/>'
+      +     '<rect x="8" y="33" width="12" height="12" rx="2.5"/>'
+      +     '<rect x="24" y="33" width="12" height="12" rx="2.5"/>'
+      +     '<rect x="40" y="33" width="12" height="12" rx="2.5"/>'
+      +   '</g>'
+      // learned reading order: a serpentine path over the patch centres
+      +   '<g stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" fill="none">'
+      +     '<path d="M14 39 L14 17 L30 17 L30 39 L46 39 L46 17"/>'
+      +     '<path d="M23 17 L20.6 15.6 M23 17 L20.6 18.4"/>'
+      +     '<path d="M39 39 L36.6 37.6 M39 39 L36.6 40.4"/>'
+      +     '<path d="M46 17 L43.8 19.3 M46 17 L48.2 19.3"/>'
+      +   '</g>'
+      // one node per placement step (each earns a per-step reward)
+      +   '<g fill="currentColor">'
+      +     '<circle cx="14" cy="39" r="2.3"/>'
+      +     '<circle cx="14" cy="17" r="1.5"/>'
+      +     '<circle cx="30" cy="17" r="1.5"/>'
+      +     '<circle cx="30" cy="39" r="1.5"/>'
+      +     '<circle cx="46" cy="39" r="1.5"/>'
+      +   '</g>'
+      + '</svg>',
+
     // Default: a document / paper — generic stand-in (the work is on documents).
     default: ''
       + '<svg viewBox="0 0 60 60" width="100%" height="100%" fill="none">'
